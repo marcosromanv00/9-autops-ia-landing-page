@@ -23,6 +23,9 @@ export default function Methodology() {
 
       <div className="container mx-auto px-lg">
         <div className="text-center mb-2xl">
+          <div className="text-brand-primary text-xs font-bold tracking-[0.3em] uppercase mb-md">
+            Proceso
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-md">
             Sprint de 2 Semanas
           </h2>

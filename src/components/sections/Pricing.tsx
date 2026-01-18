@@ -53,6 +53,9 @@ export default function Pricing() {
   return (
     <section className="py-section container mx-auto px-lg">
       <div className="text-center mb-2xl">
+        <div className="text-brand-primary text-xs font-bold tracking-[0.3em] uppercase mb-md">
+          Soluciones
+        </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-md">
           Kits de Implementación
         </h2>

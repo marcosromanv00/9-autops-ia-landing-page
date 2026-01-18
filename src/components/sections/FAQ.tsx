@@ -22,6 +22,9 @@ export default function FAQ() {
     <section className="py-section container mx-auto px-lg">
       <div className="max-w-[900px] mx-auto">
         <div className="flex flex-col items-center mb-2xl">
+          <div className="text-brand-primary text-xs font-bold tracking-[0.3em] uppercase mb-md">
+            FAQ
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-md">
             Manejo de Objeciones
           </h2>

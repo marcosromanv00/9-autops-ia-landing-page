@@ -29,6 +29,9 @@ export default function Services() {
   return (
     <section className="py-section container mx-auto px-lg">
       <div className="flex flex-col items-center mb-2xl">
+        <div className="text-brand-primary text-xs font-bold tracking-[0.3em] uppercase mb-md">
+          Capacidades
+        </div>
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-md">
           Ecosistema de Eficiencia
         </h2>

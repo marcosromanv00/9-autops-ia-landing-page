@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[90vh] px-md text-center overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center min-h-[95vh] px-md text-center overflow-hidden pt-20">
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 bg-brand-background -z-20" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-primary/10 blur-[120px] rounded-full -z-10 animate-pulse-slow" />
