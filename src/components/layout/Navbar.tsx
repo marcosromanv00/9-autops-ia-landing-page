@@ -25,12 +25,13 @@ export default function Navbar() {
             Precios
           </a>
         </div>
-        <button
+        <a
+          href="#contacto"
           aria-label="Contactar con AutOps[IA]"
-          className="bg-brand-primary text-brand-background px-lg py-sm rounded-full text-sm font-bold shadow-glow-primary hover:opacity-90 transition-all hover:scale-105 active:scale-95"
+          className="bg-brand-primary text-brand-background px-lg py-sm rounded-full text-sm font-bold shadow-glow-primary hover:opacity-90 transition-all hover:scale-105 active:scale-95 text-center"
         >
           Contacto
-        </button>
+        </a>
       </div>
     </nav>
   );
