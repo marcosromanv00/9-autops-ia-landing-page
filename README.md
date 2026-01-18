@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AutOps[IA] - Operational AI Automation Landing Page
 
-## Getting Started
+![Project Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
+![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black)
+![Tailwind CSS](https://img.shields.io/badge/Style-Tailwind%20v4-blue)
 
-First, run the development server:
+**AutOps[IA]** is a high-performance, premium landing page built with the latest technologies in the React ecosystem. Designed as a portfolio piece, it showcases advanced UI/UX patterns, industrial-grade security, and fullstack capabilities using Next.js Server Actions.
+
+## 🚀 Built with the Latest Tech Stack
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Runtime**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) - Leveraging the new `@theme` engine.
+- **Components**: [shadcn/ui](https://ui.shadcn.com/) - Custom-tailored for a cyberpunk/tech aesthetic.
+- **Optimization**: Typescript, ESLint, and Next.js Metadata API.
+- **Animations**: native CSS Keyframes & Tailwind transitions.
+
+## ✨ Key Features
+
+- 💎 **Premium Aesthetic**: Cyberpunk-inspired design with grid backgrounds, glass-morphism, and neon glow effects.
+- ⚡ **Fullstack Contact Form**: Implemented using **Next.js Server Actions** for seamless lead generation without manual API routing.
+- 📱 **Fully Responsive**: Modular Bento Grid for services and fluid layouts for all devices.
+- 🔍 **SEO & Performance**:
+  - 100/100 Lighthouse-ready (RSC architecture).
+  - Dynamic `sitemap.xml` and `robots.txt` generation.
+  - JSON-LD and Open Graph metadata configured.
+- 🔒 **Security First**:
+  - CSP (Content Security Policy) implemented.
+  - Protection against XSS and Clickjacking via custom headers.
+- ♿ **Accessibility (a11y)**:
+  - Skip Navigation Link for keyboard users.
+  - High contrast ratios (WCAG AAA compliant).
+  - Semantic HTML5 structure.
+
+## 🛠️ Folder Structure
+
+```
+/src
+  /app           # Next.js App Router (Pages, Layouts, Actions, SEO)
+  /components    # Modular Architecture
+    /layout      # Global Header, Footer, Navigation
+    /sections    # Landing Page Blocks (Hero, Services, Contact, etc.)
+    /ui          # Base Atomic Components (shadcn)
+  /lib           # Utility functions (cn, etc.)
+  /styles        # Global tokens and CSS variables
+```
+
+## 🏎️ Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_This project was developed by **Antigravity AI** as a high-end portfolio demonstration for professional developers._
