@@ -10,52 +10,104 @@ import { Button } from "@/components/ui/button";
 export default function Pricing() {
   const plans = [
     {
-      name: "Modular",
-      price: "Desde $999",
-      features: ["1 Workflow", "Soporte Standard", "Actualizaciones"],
+      name: "Starter Kit",
+      price: "$999",
+      description:
+        "Ideal para equipos pequeños buscando automatizar su primer proceso crítico.",
+      features: [
+        "1 Workflow de IA",
+        "Integración con 2 apps",
+        "Soporte vía Slack",
+        "Dashboard básico",
+      ],
+      highlight: false,
     },
     {
-      name: "PRO",
+      name: "Business Scale",
       price: "$2,499",
-      features: ["3 Workflows", "Soporte Priority", "Dashboard Analytics"],
+      description:
+        "Nuestra solución más popular para empresas en crecimiento rápido.",
+      features: [
+        "5 Workflows Autónomos",
+        "Integración Ilimitada",
+        "Soporte Priority 24/7",
+        "IA Training Personalizado",
+      ],
+      highlight: true,
     },
     {
-      name: "Enterprise",
-      price: "Custom",
-      features: ["Workflows ilimitados", "Account Manager", "SLA"],
+      name: "Custom Enterprise",
+      price: "Consultar",
+      description:
+        "Infraestructura de IA dedicada para operaciones de escala global.",
+      features: [
+        "Workflows Ilimitados",
+        "On-premise Deployment",
+        "SLA del 99.9%",
+        "Account Manager Dedicado",
+      ],
+      highlight: false,
     },
   ];
 
   return (
-    <section className="py-24 container mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-        Kits y Soluciones
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section className="py-section container mx-auto px-lg">
+      <div className="text-center mb-2xl">
+        <h2 className="text-4xl md:text-5xl font-bold mb-md">
+          Kits de Implementación
+        </h2>
+        <p className="text-text-body text-lg max-w-[600px] mx-auto">
+          Inversiones modulares diseñadas para generar ROI desde la primera
+          semana.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-xl items-center">
         {plans.map((plan, i) => (
           <Card
             key={i}
-            className={i === 1 ? "border-primary shadow-lg scale-105" : ""}
+            className={`relative border-2 transition-all duration-300 ${
+              plan.highlight
+                ? "border-brand-primary bg-brand-surface-medium shadow-glow-primary scale-105 z-10"
+                : "border-brand-border bg-brand-surface-low hover:border-brand-primary/30"
+            } rounded-bento`}
           >
-            <CardHeader>
-              <CardTitle className="text-2xl">{plan.name}</CardTitle>
-              <div className="text-3xl font-bold mt-4">{plan.price}</div>
+            {plan.highlight && (
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-primary text-brand-background text-[10px] font-black uppercase px-md py-1 rounded-full tracking-widest">
+                Recomendado
+              </div>
+            )}
+            <CardHeader className="text-center">
+              <CardTitle className="text-xl text-text-muted uppercase tracking-widest">
+                {plan.name}
+              </CardTitle>
+              <div className="text-5xl font-bold text-text-heading mt-md mb-sm">
+                {plan.price}
+              </div>
+              <p className="text-sm text-text-body px-md">{plan.description}</p>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-4">
+              <div className="h-px bg-brand-border mb-lg" />
+              <ul className="space-y-md">
                 {plan.features.map((feature, j) => (
-                  <li key={j} className="flex items-center gap-2">
-                    <span className="text-primary">✓</span> {feature}
+                  <li
+                    key={j}
+                    className="flex items-start gap-md text-sm text-text-body"
+                  >
+                    <span className="text-brand-primary mt-1">✦</span> {feature}
                   </li>
                 ))}
               </ul>
             </CardContent>
             <CardFooter>
               <Button
-                className="w-full"
-                variant={i === 1 ? "default" : "outline"}
+                className={`w-full h-12 text-md font-bold transition-all ${
+                  plan.highlight
+                    ? "bg-brand-primary text-brand-background hover:opacity-90"
+                    : "bg-transparent border-2 border-brand-border text-text-heading hover:bg-brand-surface-medium hover:border-brand-primary"
+                }`}
               >
-                Elegir Plan
+                Empezar Ahora
               </Button>
             </CardFooter>
           </Card>
