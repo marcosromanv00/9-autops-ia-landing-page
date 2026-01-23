@@ -23,6 +23,22 @@ Una Landing Page de alto impacto visual diseñada para una startup ficticia de I
 
 *(Si el link no abre, por favor revisar el repositorio para instrucciones de despliegue local)*
 
+## 📸 Galería
+
+<!-- COMIENZO DE LA GALERÍA -->
+<!-- Instrucciones: Reemplaza los links con tus capturas reales -->
+
+<div align="center">
+  <img src="https://via.placeholder.com/800x450?text=Hero+Section" alt="Hero Section" width="100%" />
+  <p><em>Autops.ia Hero Section - Diseño de alto impacto</em></p>
+</div>
+
+| Features Grid | Mobile View |
+|:---:|:---:|
+| ![Features](https://via.placeholder.com/400x300?text=Features) | ![Mobile](https://via.placeholder.com/200x400?text=Mobile) |
+
+<!-- FIN DE LA GALERÍA -->
+
 ## 🛠️ Stack
 
 *   **Core**: React + TypeScript
