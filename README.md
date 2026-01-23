@@ -1,70 +1,56 @@
-# AutOps[IA] - Operational AI Automation Landing Page
+# 🤖 Autops.ia - IA Automation Landing Page
 
-![Project Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
-![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-black)
-![Tailwind CSS](https://img.shields.io/badge/Style-Tailwind%20v4-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-**AutOps[IA]** is a high-performance, premium landing page built with the latest technologies in the React ecosystem. Designed as a portfolio piece, it showcases advanced UI/UX patterns, industrial-grade security, and fullstack capabilities using Next.js Server Actions.
+> **"El futuro de la automatización empresarial, hoy."**
 
-## 🚀 Built with the Latest Tech Stack
+Una Landing Page de alto impacto visual diseñada para una startup ficticia de Inteligencia Artificial ("Autops.ia"). Este proyecto demuestra la capacidad de transformar conceptos abstractos en interfaces web atractivas, modernas y orientadas a la conversión.
 
-- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
-- **Runtime**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) - Leveraging the new `@theme` engine.
-- **Components**: [shadcn/ui](https://ui.shadcn.com/) - Custom-tailored for a cyberpunk/tech aesthetic.
-- **Optimization**: Typescript, ESLint, and Next.js Metadata API.
-- **Animations**: native CSS Keyframes & Tailwind transitions.
+## 🌟 Highlights Técnicos
 
-## ✨ Key Features
+*   **Diseño UI/UX Futurista**: Implementación de estética "Dark Mode" con efectos de glassmorphism, gradientes neón y tipografía moderna para transmitir innovación tecnológica.
+*   **Performance First**: Construido con **Vite** para tiempos de carga instantáneos y optimización de assets. 
+*   **Componentes Modulares**: Arquitectura basada en componentes React reutilizables y tipados con **TypeScript**.
+*   **Responsive Design**: Adaptabilidad fluida desde móviles hasta pantallas 4K, asegurando una experiencia consistente.
+*   **Animaciones Suaves**: Uso estratégico de transiciones CSS para mejorar la interactividad sin sacrificar rendimiento.
 
-- 💎 **Premium Aesthetic**: Cyberpunk-inspired design with grid backgrounds, glass-morphism, and neon glow effects.
-- ⚡ **Fullstack Contact Form**: Implemented using **Next.js Server Actions** for seamless lead generation without manual API routing.
-- 📱 **Fully Responsive**: Modular Bento Grid for services and fluid layouts for all devices.
-- 🔍 **SEO & Performance**:
-  - 100/100 Lighthouse-ready (RSC architecture).
-  - Dynamic `sitemap.xml` and `robots.txt` generation.
-  - JSON-LD and Open Graph metadata configured.
-- 🔒 **Security First**:
-  - CSP (Content Security Policy) implemented.
-  - Protection against XSS and Clickjacking via custom headers.
-- ♿ **Accessibility (a11y)**:
-  - Skip Navigation Link for keyboard users.
-  - High contrast ratios (WCAG AAA compliant).
-  - Semantic HTML5 structure.
+## 🚀 Demo en Vivo
 
-## 🛠️ Folder Structure
+👉 **[Ver Proyecto Desplegado](https://9-autops-ia-landing-page.vercel.app/)**
 
-```
-/src
-  /app           # Next.js App Router (Pages, Layouts, Actions, SEO)
-  /components    # Modular Architecture
-    /layout      # Global Header, Footer, Navigation
-    /sections    # Landing Page Blocks (Hero, Services, Contact, etc.)
-    /ui          # Base Atomic Components (shadcn)
-  /lib           # Utility functions (cn, etc.)
-  /styles        # Global tokens and CSS variables
-```
+*(Si el link no abre, por favor revisar el repositorio para instrucciones de despliegue local)*
 
-## 🏎️ Getting Started
+## 🛠️ Stack
 
-First, install dependencies:
+*   **Core**: React + TypeScript
+*   **Build Tool**: Vite
+*   **Estilos**: Tailwind CSS + CSS Puro (Efectos personalizados)
+*   **Iconos**: Lucide React / Heroicons
 
-```bash
-npm install
-```
+## 💡 Concepto de Diseño
 
-Then, run the development server:
+El objetivo era crear una narrativa visual que vendiera "confianza" y "tecnología de punta". Se utilizaron:
+- Colores primarios: #0A0A0A (Fondo), #3B82F6 (Accento Azul), #8B5CF6 (Accento Violeta).
+- Secciones clave: Hero con CTA claro, Grid de "Features" para escaneo rápido, y Footer informativo.
 
-```bash
-npm run dev
-```
+## 📦 Instalación Local
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  Clonar repo:
+    ```bash
+    git clone https://github.com/marcosromanv00/9-autops-ia-landing-page.git
+    ```
+2.  Instalar dependencias:
+    ```bash
+    npm install
+    ```
+3.  Iniciar servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
 
-## 📄 License
+## 📬 Contacto
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-_This project was developed by **Antigravity AI** as a high-end portfolio demonstration for professional developers._
+¿Te interesa colaborar o contratarme? [Visita mi perfil](https://github.com/marcosromanv00) o contáctame directamente.
